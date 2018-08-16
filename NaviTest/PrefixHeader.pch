@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  NaviTest
+//
+//  Created by zhangqq on 2018/8/16.
+//  Copyright © 2018年 张强. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Constance.h"
+#import "AppDelegate.h"
+
+#endif /* PrefixHeader_pch */
