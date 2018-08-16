@@ -1,0 +1,9 @@
+# Navigation-TabbarController
+tabbarcontrol上面加持导航栏显示控制器时，各种push和切换tabbar的平滑切换
+
+这个是针对主流的设计，一般都是先写一个roottabbarcontrol。一个rootnavigationbarcontrol。然后一个baseviewcontroller。顺序是在tabbarcontrol中使用导航来添加rootcontrol
+然后再加到tabbarcontrol上，在APPdelegate中进入的时候直接进roottabbarcontrol。
+
+这种设计大多数APP都在用，那么在push的时候会有一个问题。比如我第一个控制器不显示导航栏，第二个需要显示，所有页面支持手势滑动返回，这时候返回的时候tabbar会先
+出现，体验不好。或者切换tabbar的时候第一个没有导航栏的控制器突然闪一下等等各种问题。
+这个demo简单列举了几种情况，然后用很简短的代码解决了上述问题。任意控制器无论你有没有导航栏，滑动返回都会有动画且平滑显示，tabbar只在最底层的控制器显示的时候才会有
